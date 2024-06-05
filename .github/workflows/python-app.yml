@@ -1,11 +1,14 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python application
+name: Python应用测试定时执行
 
 on:
   push:
     branches: [ "master" ]
+  schedule:
+    # 每分钟执行一次，实际操作时请根据需求调整 cron 表达式
+    - cron: '*/2 * * * *'
 
 permissions:
   contents: read
