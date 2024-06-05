@@ -7,8 +7,7 @@ on:
   push:
     branches: [ "master" ]
   schedule:
-    # 每分钟执行一次，实际操作时请根据需求调整 cron 表达式
-    - cron: '*/2 * * * *'
+    - cron: '*/1 * * * *'  # 这意味着每分钟检查一次，实际中不能设置为每两分钟
 
 permissions:
   contents: read
