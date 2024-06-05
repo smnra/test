@@ -6,8 +6,8 @@ name: Python应用测试定时执行
 on:
   push:
     branches: [ "master" ]
-  schedule:
-    - cron: '*/1 * * * *'  # 这意味着每分钟检查一次，实际中不能设置为每两分钟
+#  schedule:
+#    - cron: '*/1 * * * *'  # 这意味着每分钟检查一次，实际中不能设置为每两分钟
 
 permissions:
   contents: read
